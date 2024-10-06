@@ -1,0 +1,56 @@
+body {
+  background-color: #f0f2f5;
+}
+
+.ui.menu {
+  background-color: #2185d0;
+  border-radius: 0;
+}
+
+.ui.menu .item {
+  color: #fff;
+}
+
+.ui.menu .item:hover {
+  background-color: #1678c2;
+}
+
+.ui.header {
+  color: #1b1c1d;
+}
+
+.ui.grid.container {
+  margin-top: 2em;
+}
+
+.ui.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ui.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ui.button.primary {
+  background-color: #21ba45;
+  color: white;
+}
+
+.ui.button.primary:hover {
+  background-color: #16ab39;
+}
+
+.ui.vertical.footer.segment {
+  padding: 2em 0;
+  background-color: #1b1c1d;
+  color: #fff;
+  margin-top: 3em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .ui.grid > .column {
+    text-align: center;
+  }
+}

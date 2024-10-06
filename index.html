@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern SemanticUI Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  
+</head>
+<body>
+
+  <!-- Responsive Menu -->
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a class="header item">Corner</a>
+      <a class="active item">Home</a>
+      <a class="item">About</a>
+      <a class="item">Services</a>
+      <a class="item">Contact</a>
+      <div class="right menu">
+        <a class="item">Login</a>
+        <a class="item">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="ui container grid" style="margin-top: 4em;">
+    <div class="four wide column">
+     
+      <div class="ui vertical fluid menu">
+        <a class="active item">Dashboard</a>
+        <a class="item">Profile</a>
+        <a class="item">Settings</a>
+        <a class="item">Logout</a>
+      </div>
+    </div>
+
+    <div class="twelve wide column">
+      <!-- Main Content -->
+      <div class="ui segment">
+        <h2 class="ui header">Welcome to Your Dashboard</h2>
+        <p>Detail information</p>
+
+        <!-- Button and Modal -->
+        <button class="ui primary button" id="openModalBtn">Open</button>
+        <div class="ui modal">
+          <i class="close icon"></i>
+          <div class="header">Modal</div>
+          <div class="content">
+            <p>Helow Corner</p>
+          </div>
+          <div class="actions">
+            <div class="ui positive button">OK</div>
+            <div class="ui cancel button">Cancel</div>
+          </div>
+        </div>
+
+       
+        <h3 class="ui dividing header">Featured Services</h3>
+        <div class="ui stackable three column grid">
+          <div class="column">
+            <div class="ui raised card">
+              <div class="image">
+                <img src="img/logo-2582747_640.png">
+              </div>
+              <div class="content">
+                <a class="header">Css</a>
+                <div class="meta">Category: Editing</div>
+                <div class="description">Build amazing websites </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui raised card">
+              <div class="image">
+                <img src="img/html.png">
+              </div>
+              <div class="content">
+                <a class="header">Html</a>
+                <div class="meta">Category: Web</div>
+                <div class="description">Create Website</div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui raised card">
+              <div class="image">
+                <img src="img/javascript-8543231_640.png">
+              </div>
+              <div class="content">
+                <a class="header">JavaScript</a>
+                <div class="meta">Category: Animation</div>
+                <div class="description">Creat Animation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical footer segment">
+    <div class="ui container center aligned">
+      <p> &copy; 2024 corner. All rights reserved.</p>
+    </div>
+  </div>
+
+  
+  <script>
+    $('#openModalBtn').on('click', function() {
+      $('.ui.modal').modal('show');
+    });
+  </script>
+
+</body>
+</html>
